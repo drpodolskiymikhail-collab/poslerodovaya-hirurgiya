@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO: основные -->
-  <title>Центр послеродовой хирургии Москва — варикоз, грыжа, диастаз после беременности</title>
-  <meta name="description" content="Специализированный центр послеродовой хирургии в Москве. Лечение варикоза, грыжи и диастаза после беременности. К.М.Н. Подольский М.Ю. Запись онлайн.">
-  <meta name="keywords" content="послеродовая хирургия Москва, диастаз лечение Москва, пупочная грыжа после родов операция, варикоз после беременности лечение Москва">
+  <title>Центр послеродовой хирургии Москва — варикоз, грыжа, диастаз, абдоминопластика после беременности</title>
+  <meta name="description" content="Центр послеродовой хирургии в Москве. Варикоз, пупочная грыжа, диастаз прямых мышц, абдоминопластика после беременности и родов. К.М.Н. Подольский М.Ю. Стаж 8 лет, рейтинг 5.0. Запись онлайн.">
+  <meta name="keywords" content="послеродовая хирургия Москва, диастаз лечение Москва, пупочная грыжа после родов операция, варикоз после беременности лечение Москва, абдоминопластика после родов, сосудистые звёздочки склеротерапия Москва, центр послеродовой хирургии">
   <meta name="author" content="Центр послеродовой хирургии">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://poslerodovaya-hirurgiya.ru/">
@@ -21,10 +21,11 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://poslerodovaya-hirurgiya.ru/">
-  <meta property="og:title" content="Центр послеродовой хирургии Москва — варикоз, грыжа, диастаз после беременности">
-  <meta property="og:description" content="Специализированный центр послеродовой хирургии в Москве. Варикоз, грыжа, диастаз после беременности. К.М.Н. Подольский М.Ю.">
+  <meta property="og:title" content="Центр послеродовой хирургии Москва — варикоз, грыжа, диастаз, абдоминопластика после беременности">
+  <meta property="og:description" content="Специализированный центр послеродовой хирургии. Варикоз, грыжа, диастаз, абдоминопластика — один врач, несколько специализаций. К.М.Н. Подольский М.Ю.">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="poslerodovaya-hirurgiya.ru">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=85">
 
   <!-- Schema.org — MedicalClinic -->
   <script type="application/ld+json">
@@ -33,9 +34,13 @@
     "@type": "MedicalClinic",
     "name": "Центр послеродовой хирургии",
     "url": "https://poslerodovaya-hirurgiya.ru",
-    "description": "Специализированный центр послеродовой хирургии в Москве. Лечение варикоза, пупочной грыжи и диастаза после беременности и родов. Ведущий специалист — хирург Подольский М.Ю., кандидат медицинских наук.",
+    "description": "Специализированный центр послеродовой хирургии в Москве. Лечение варикоза, пупочной грыжи, диастаза прямых мышц, абдоминопластика после беременности и родов. Ведущий специалист — хирург Подольский М.Ю., кандидат медицинских наук.",
     "telephone": "+79951126399",
-    "medicalSpecialty": "Хирургия",
+    "medicalSpecialty": [
+      "Флебология",
+      "Герниология",
+      "Пластическая хирургия"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "ул. Ставропольская, д. 23, корп. 1",
@@ -58,7 +63,7 @@
     "employee": {
       "@type": "Physician",
       "name": "Подольский Михаил Юрьевич",
-      "description": "Хирург, кандидат медицинских наук. Стаж 8 лет.",
+      "description": "Хирург, кандидат медицинских наук. Специализации: флебология, герниология, абдоминопластика. Стаж 8 лет.",
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
@@ -252,35 +257,14 @@
     .hero-photo {
       height: 100vh;
       background: var(--bg-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       overflow: hidden;
     }
 
-    .hero-photo-placeholder {
+    .hero-photo img {
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      gap: 16px;
-      font-size: 15px;
-      background: linear-gradient(160deg, #EEF2FF 0%, #F9FAFB 100%);
-    }
-
-    .hero-photo-placeholder svg {
-      width: 72px;
-      height: 72px;
-      opacity: 0.25;
-    }
-
-    .hero-photo-placeholder span {
-      font-size: 14px;
-      color: var(--muted);
-      opacity: 0.7;
+      object-fit: cover;
+      display: block;
     }
 
     /* SECTION BASE */
@@ -312,75 +296,67 @@
       line-height: 1.7;
     }
 
-    /* ABOUT */
-    .about {
+    /* PROBLEMS */
+    .problems {
       background: var(--bg-soft);
     }
 
-    .about-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
+    .problems-inner {
       max-width: 1100px;
       margin: 0 auto;
     }
 
-    .about-text p {
-      font-size: 17px;
-      line-height: 1.8;
-      color: var(--text);
-      margin-bottom: 20px;
+    .problems-header {
+      margin-bottom: 56px;
     }
 
-    .about-text p:last-child { margin-bottom: 0; }
-
-    .about-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 24px;
-    }
-
-    .badge {
-      font-size: 12px;
-      font-weight: 500;
-      padding: 5px 12px;
-      background: #EEF2FF;
-      color: var(--blue);
-      border-radius: 20px;
-      white-space: nowrap;
-    }
-
-    .about-stats {
+    .problems-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
-    .stat {
-      padding: 28px;
+    .problem-card {
       background: #fff;
-      border-radius: 12px;
       border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
     }
 
-    .stat-number {
-      font-family: 'Playfair Display', serif;
-      font-size: 40px;
-      font-weight: 500;
-      color: var(--blue);
-      line-height: 1;
-      margin-bottom: 6px;
+    .problem-icon {
+      width: 44px;
+      height: 44px;
+      background: #FEF2F2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #DC2626;
+      margin-bottom: 16px;
     }
 
-    .stat-label {
-      font-size: 13px;
+    .problem-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .problem-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .problem-card p {
+      font-size: 14px;
       color: var(--muted);
-      line-height: 1.4;
+      line-height: 1.6;
     }
 
-    /* SERVICES */
+    /* SERVICES — тёмный фон */
+    .services {
+      background: var(--blue);
+    }
+
     .services-inner {
       max-width: 1100px;
       margin: 0 auto;
@@ -390,6 +366,18 @@
       margin-bottom: 56px;
     }
 
+    .services-header .section-label {
+      color: rgba(255,255,255,0.5);
+    }
+
+    .services-header .section-title {
+      color: #fff;
+    }
+
+    .services-header .section-sub {
+      color: rgba(255,255,255,0.65);
+    }
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -397,21 +385,22 @@
     }
 
     .service-card {
-      padding: 36px 32px;
-      border: 1px solid var(--border);
+      padding: 32px 28px;
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 12px;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      background: rgba(255,255,255,0.06);
+      transition: border-color 0.2s, background 0.2s;
     }
 
     .service-card:hover {
-      border-color: var(--blue);
-      box-shadow: 0 4px 24px rgba(26,47,90,0.08);
+      border-color: rgba(255,255,255,0.28);
+      background: rgba(255,255,255,0.1);
     }
 
     .service-icon {
       width: 48px;
       height: 48px;
-      background: #EEF2FF;
+      background: rgba(255,255,255,0.12);
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -422,20 +411,21 @@
     .service-icon svg {
       width: 24px;
       height: 24px;
-      color: var(--blue);
+      color: #fff;
     }
 
     .service-card h3 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
       margin-bottom: 10px;
+      color: #fff;
     }
 
     .service-card p {
       font-size: 14px;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 16px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+      margin-bottom: 18px;
     }
 
     .service-tags {
@@ -448,15 +438,116 @@
       font-size: 11px;
       font-weight: 500;
       padding: 4px 10px;
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
       border-radius: 20px;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .service-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .service-badge.primary {
+      background: rgba(74,222,128,0.2);
+      color: #4ADE80;
+      border: 1px solid rgba(74,222,128,0.3);
+    }
+
+    .service-badge.partner {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* TEAM */
+    .team {
+      background: var(--bg-soft);
+    }
+
+    .team-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .team-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+
+    .team-card.partner {
+      opacity: 0.75;
+      background: var(--bg-soft);
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #EEF2FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: var(--blue);
+    }
+
+    .team-avatar svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .team-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+
+    .team-role {
+      font-size: 13px;
       color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .team-desc {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .team-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .team-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: #EEF2FF;
+      color: var(--blue);
     }
 
     /* WHY */
     .why {
-      background: var(--bg-soft);
+      background: var(--bg);
     }
 
     .why-inner {
@@ -475,7 +566,7 @@
       display: flex;
       gap: 20px;
       padding: 28px;
-      background: #fff;
+      background: var(--bg-soft);
       border-radius: 12px;
       border: 1px solid var(--border);
     }
@@ -576,6 +667,7 @@
     .footer-tg:hover { text-decoration: underline; }
 
     /* PROCESS */
+    .process { background: var(--bg); }
     .process-inner { max-width: 1100px; margin: 0 auto; }
     .process-steps {
       display: grid;
@@ -732,14 +824,11 @@
     }
     .address-map iframe { width: 100%; height: 100%; border: none; display: block; }
 
-    /* TELEGRAM ICON */
-    .tg-icon {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
+    /* RESPONSIVE — планшет */
+    @media (max-width: 1024px) {
+      .team-grid { grid-template-columns: 1fr 1fr; }
     }
 
-    /* RESPONSIVE — планшет */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       .nav-name { display: none; }
@@ -764,8 +853,9 @@
 
       section { padding: 64px 24px; }
 
-      .about-inner { grid-template-columns: 1fr; gap: 48px; }
+      .problems-grid { grid-template-columns: 1fr 1fr; }
       .services-grid { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr; }
 
       .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -824,12 +914,10 @@
 
       .section-title { font-size: 28px; }
 
-      .about-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
-      .stat { padding: 20px; }
-      .stat-number { font-size: 28px; }
-
+      .problems-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .service-card { padding: 24px 20px; }
+      .team-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr; }
       .reviews-grid { grid-template-columns: 1fr; }
       .address-inner { grid-template-columns: 1fr; }
@@ -858,7 +946,7 @@
   <nav>
     <span class="nav-name">Центр послеродовой хирургии</span>
     <a href="tel:+79951126399" class="nav-phone">+7 995 112-63-99</a>
-    <a href="https://t.me/hirurg_moskva" target="_blank" class="nav-cta">Записаться на консультацию</a>
+    <a href="https://t.me/hirurg_moskva" target="_blank" class="nav-cta">Записаться</a>
   </nav>
 
   <!-- HERO -->
@@ -869,10 +957,10 @@
         <span class="hero-tag-dot"></span>
         Москва
         <span class="hero-tag-dot"></span>
-        к.м.н.
+        К.М.Н.
       </span>
-      <h1>Центр послеродовой хирургии</h1>
-      <p class="hero-sub">После родов тело изменилось — и вы живёте с этим. Варикоз, грыжа, диастаз — это решается. Один хирург, три специализации — именно в этом наша экспертиза.</p>
+      <h1>После родов тело изменилось. Это решается.</h1>
+      <p class="hero-sub">Варикоз, грыжа, диастаз, сосудистые звёздочки — частые последствия беременности. Один хирург, несколько специализаций. Разберёмся со всем вместе.</p>
       <div class="hero-actions">
         <a href="https://t.me/hirurg_moskva" target="_blank" class="btn-primary">
           Записаться на консультацию
@@ -895,47 +983,81 @@
       </div>
     </div>
     <div class="hero-photo">
-      <div class="hero-photo-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <path d="M3 9h18M9 21V9"/>
-        </svg>
-        <span>Фото врача / клиники</span>
-      </div>
+      <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=85" alt="Операционная РЖД-Медицина им. Семашко">
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="about-inner">
-      <div class="about-text">
-        <p class="section-label">О центре</p>
-        <h2 class="section-title">Специализируемся на последствиях беременности и родов</h2>
-        <p>Беременность и роды — это большая нагрузка на тело. Варикоз, пупочная грыжа, диастаз прямых мышц — частые последствия, с которыми женщины живут годами. Каждая из этих проблем требует оценки специалиста. Хирургическое лечение показано при наличии симптомов — боли, функциональных нарушений, сочетания с грыжей.</p>
-        <div class="about-badges">
-          <span class="badge">Подольский М.Ю., к.м.н.</span>
-          <span class="badge">Стаж 8 лет</span>
-          <span class="badge">РЖД-Медицина им. Семашко</span>
-          <span class="badge">Варикоз · Грыжа · Диастаз</span>
-        </div>
+  <!-- PROBLEMS -->
+  <section class="problems">
+    <div class="problems-inner">
+      <div class="problems-header">
+        <p class="section-label">С чем приходят</p>
+        <h2 class="section-title">После беременности никто не предупреждает что...</h2>
       </div>
-      <div class="about-stats">
-        <div class="stat">
-          <div class="stat-number">8 лет</div>
-          <div class="stat-label">Опыт в послеродовой хирургии</div>
+      <div class="problems-grid">
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/>
+            </svg>
+          </div>
+          <h3>Появляется варикоз</h3>
+          <p>Беременность — главный триггер у женщин с предрасположенностью. Давление матки, гормоны, нагрузка на вены.</p>
         </div>
-        <div class="stat">
-          <div class="stat-number">5.0</div>
-          <div class="stat-label">Рейтинг — 155 подтверждённых отзывов</div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4M12 16h.01"/>
+            </svg>
+          </div>
+          <h3>Вылезает пупочная грыжа</h3>
+          <p>Повышенное внутрибрюшное давление при вынашивании — частая причина послеродовых грыж белой линии живота.</p>
         </div>
-        <div class="stat">
-          <div class="stat-number">3 проблемы</div>
-          <div class="stat-label">Варикоз, грыжа, диастаз — у одного специалиста</div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+          </div>
+          <h3>Живот не возвращается</h3>
+          <p>Диастаз прямых мышц: мышцы разошлись после беременности. Никакой фитнес это не вернёт — только хирургия.</p>
         </div>
-        <div class="stat">
-          <div class="stat-number">1 визит</div>
-          <div class="stat-label">Часто достаточно для решения нескольких задач</div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M12 2C8 2 4 6 4 10c0 5 8 12 8 12s8-7 8-12c0-4-4-8-8-8z"/>
+              <circle cx="12" cy="10" r="2"/>
+            </svg>
+          </div>
+          <h3>Сосудистые звёздочки на ногах</h3>
+          <p>Гормональный фон плюс давление во время беременности — сосудистые сеточки появляются даже у молодых.</p>
         </div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Послеродовые изменения тела</h3>
+          <p>Живот, грудь, рубец после кесарева сечения — всё это поддаётся коррекции. Не нужно жить с дискомфортом.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+          <h3>"Это норма" — говорят врачи</h3>
+          <p>Многие проблемы после родов нормализуются на приёме. Но жить с этим неудобно — и это лечится.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -944,22 +1066,21 @@
   <section class="services">
     <div class="services-inner">
       <div class="services-header">
-        <p class="section-label">Услуги</p>
+        <p class="section-label">Направления</p>
         <h2 class="section-title">Что мы лечим</h2>
-        <p class="section-sub">Три самые частые послеродовые проблемы — у одного хирурга, который специализируется именно на последствиях беременности и родов.</p>
+        <p class="section-sub">Шесть направлений — большинство закрывает один специалист.</p>
       </div>
       <div class="services-grid">
 
         <div class="service-card">
+          <span class="service-badge primary">Основное направление</span>
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-              <path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4"/>
-              <path d="M12 16v-4"/>
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
           </div>
           <h3>Варикоз после беременности</h3>
-          <p>Беременность — один из главных триггеров варикоза у женщин с наследственной предрасположенностью. Операция от 30 минут, прокол 2 мм, домой в тот же день.</p>
+          <p>РЧА и ЭВЛК — закрытие варикозных вен через прокол 2 мм. Операция 30 минут, местная анестезия, домой в тот же день.</p>
           <div class="service-tags">
             <span class="tag">РЧА / ЭВЛК</span>
             <span class="tag">Склеротерапия</span>
@@ -975,27 +1096,153 @@
               <path d="M12 8v4M12 16h.01"/>
             </svg>
           </div>
-          <h3>Пупочная грыжа и диастаз</h3>
-          <p>Частые спутники после родов. Можно устранить оба за одну операцию.</p>
+          <h3>Сосудистые звёздочки</h3>
+          <p>Склеротерапия телеангиэктазий и ретикулярных вен. Процедура 10–15 минут, без госпитализации.</p>
           <div class="service-tags">
-            <span class="tag">Лапароскопия</span>
-            <span class="tag">Герниопластика</span>
-            <span class="tag">Коррекция диастаза</span>
+            <span class="tag">Склеротерапия</span>
+            <span class="tag">10–15 минут</span>
+            <span class="tag">без госпитализации</span>
           </div>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              <path d="M12 2v20M2 12h20"/>
+              <circle cx="12" cy="12" r="5"/>
             </svg>
           </div>
-          <h3>Индивидуальный план лечения</h3>
-          <p>Все три проблемы — у одного хирурга. Составим план лечения с учётом вашей ситуации, рисков и пожеланий.</p>
+          <h3>Пупочная грыжа</h3>
+          <p>Лапароскопическая герниопластика IPOM-UP через минидоступ 2 см. Выписка на следующий день.</p>
           <div class="service-tags">
-            <span class="tag">Варикоз + грыжа + диастаз</span>
-            <span class="tag">Экспертная оценка</span>
-            <span class="tag">Индивидуальный подход</span>
+            <span class="tag">Лапароскопия</span>
+            <span class="tag">IPOM-UP</span>
+            <span class="tag">выписка на следующий день</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M3 12h18M3 8h18M3 16h18"/>
+            </svg>
+          </div>
+          <h3>Диастаз прямых мышц</h3>
+          <p>Хирургическая коррекция белой линии живота. При сочетании с грыжей — одна операция.</p>
+          <div class="service-tags">
+            <span class="tag">е-ТЕР</span>
+            <span class="tag">Грыжа + диастаз</span>
+            <span class="tag">После беременности</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Абдоминопластика</h3>
+          <p>Коррекция передней брюшной стенки: избыток кожи и жировой клетчатки после беременности. Часто совмещается с коррекцией диастаза.</p>
+          <div class="service-tags">
+            <span class="tag">Коррекция живота</span>
+            <span class="tag">Совместно с диастазом</span>
+            <span class="tag">Рубец после КС</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3>Маммопластика</h3>
+          <p>Коррекция формы и объёма груди после кормления — выполняется совместно с пластическим хирургом центра на базе РЖД-Медицина.</p>
+          <div class="service-tags">
+            <span class="tag">Пластический хирург центра</span>
+            <span class="tag">Совместная операция</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+    <div class="team-inner">
+      <p class="section-label">Специалисты</p>
+      <h2 class="section-title">Наша команда</h2>
+      <p class="section-sub">Каждое направление — профильный специалист. Не "хирург который всё подряд", а команда с фокусом на послеродовом восстановлении.</p>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="team-name">Подольский Михаил Юрьевич</div>
+          <div class="team-role">Хирург, К.М.Н.</div>
+          <div class="team-desc">Специализация: варикоз, грыжа, диастаз, абдоминопластика.<br>Стаж 8 лет · Рейтинг 5.0 · 155 отзывов.</div>
+          <div class="team-badges">
+            <span class="team-badge">К.М.Н.</span>
+            <span class="team-badge">РЧА/ЭВЛК</span>
+            <span class="team-badge">Герниология</span>
+            <span class="team-badge">Абдоминопластика</span>
+          </div>
+        </div>
+
+        <div class="team-card partner">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="team-name">Гинеколог</div>
+          <div class="team-role">Специалист направления уточняется</div>
+          <div class="team-desc">Направление формируется — работаем с профильными специалистами РЖД-Медицина им. Семашко.</div>
+          <div class="team-badges">
+            <span class="team-badge">Гинекология</span>
+            <span class="team-badge">Послеродовое восстановление</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="team-name">Пластический хирург</div>
+          <div class="team-role">Специалист центра</div>
+          <div class="team-desc">Маммопластика и эстетическая коррекция выполняются совместно с пластическим хирургом центра. Операции проводятся на базе РЖД-Медицина им. Семашко.</div>
+          <div class="team-badges">
+            <span class="team-badge">Маммопластика</span>
+            <span class="team-badge">Эстетическая коррекция</span>
+            <span class="team-badge">РЖД-Медицина</span>
+          </div>
+        </div>
+
+        <div class="team-card partner">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="team-name">Психолог</div>
+          <div class="team-role">Специалист направления уточняется</div>
+          <div class="team-desc">Психологическая поддержка в процессе лечения — направление формируется.</div>
+          <div class="team-badges">
+            <span class="team-badge">Поддержка после родов</span>
+            <span class="team-badge">Образ тела</span>
           </div>
         </div>
 
@@ -1006,39 +1253,39 @@
   <!-- WHY -->
   <section class="why">
     <div class="why-inner">
-      <p class="section-label">Преимущества</p>
-      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="section-label">Почему мы</p>
+      <h2 class="section-title">Центр, который думает системно</h2>
       <div class="why-grid">
 
         <div class="why-item">
           <div class="why-num">1</div>
           <div>
-            <h4>Комплексный подход</h4>
-            <p>Варикоз, грыжа и диастаз лечим в одном месте, у одного хирурга — без беготни по специалистам.</p>
+            <h4>Один врач — несколько специализаций.</h4>
+            <p>Подольский М.Ю. закрывает варикоз, грыжу, диастаз и абдоминопластику. Не нужно ходить по разным клиникам.</p>
           </div>
         </div>
 
         <div class="why-item">
           <div class="why-num">2</div>
           <div>
-            <h4>Понимаем послеродовые изменения</h4>
-            <p>Специализируемся именно на этой группе пациенток — знаем особенности, риски и нюансы после беременности.</p>
+            <h4>Смотрим комплексно.</h4>
+            <p>Часто одна пациентка приходит с 2–3 проблемами одновременно. Составляем единый план — чтобы меньше операций и меньше восстановлений.</p>
           </div>
         </div>
 
         <div class="why-item">
           <div class="why-num">3</div>
           <div>
-            <h4>Минимальная инвазивность</h4>
-            <p>Лапароскопия и эндовенозные методы без больших разрезов. Быстрое восстановление, минимум следов.</p>
+            <h4>Специализированный подход к женщинам после родов.</h4>
+            <p>Понимаем как беременность меняет тело — варикоз, диастаз, грыжа после родов имеют свои особенности.</p>
           </div>
         </div>
 
         <div class="why-item">
           <div class="why-num">4</div>
           <div>
-            <h4>Личное ведение</h4>
-            <p>От первой консультации до контрольного осмотра — один врач, одна линия общения, никаких передач между кабинетами.</p>
+            <h4>Партнёры для смежных направлений.</h4>
+            <p>Гинекология, маммопластика, психологическая поддержка — не отправляем "куда-нибудь", а к конкретным специалистам.</p>
           </div>
         </div>
 
@@ -1051,27 +1298,27 @@
     <div class="process-inner">
       <p class="section-label">Как это работает</p>
       <h2 class="section-title">Четыре шага к результату</h2>
-      <p class="section-sub">Прозрачный план — от первого звонка до выписки и наблюдения.</p>
+      <p class="section-sub">Прозрачный план — от первого обращения до наблюдения после операции.</p>
       <div class="process-steps">
         <div class="process-step">
           <div class="process-num">1</div>
-          <h4>Консультация</h4>
-          <p>Осматриваем, выслушиваем, отвечаем на вопросы. УЗИ при необходимости.</p>
+          <h4>Консультация и осмотр</h4>
+          <p>Рассказываете о проблемах, врач осматривает. При необходимости — УЗИ на месте.</p>
         </div>
         <div class="process-step">
           <div class="process-num">2</div>
-          <h4>Составляем план</h4>
-          <p>Возможно объединить несколько процедур в одну операцию — обсудим вместе.</p>
+          <h4>Комплексный план</h4>
+          <p>Составляем план с учётом приоритетов: что важнее, что можно совместить, оптимальные сроки.</p>
         </div>
         <div class="process-step">
           <div class="process-num">3</div>
-          <h4>Операция</h4>
-          <p>От 30 минут (варикоз) до 1,5–2 часов (комплекс). Анестезия подбирается индивидуально.</p>
+          <h4>Лечение</h4>
+          <p>Операция или процедура. Большинство вмешательств — амбулаторно, выписка в день операции или на следующий.</p>
         </div>
         <div class="process-step">
           <div class="process-num">4</div>
-          <h4>Восстановление</h4>
-          <p>Чёткие рекомендации, на связи в Telegram — ответим на любой вопрос.</p>
+          <h4>Наблюдение</h4>
+          <p>Контрольные осмотры, ответы на вопросы в Telegram. На связи от первого дня до полного восстановления.</p>
         </div>
       </div>
     </div>
@@ -1082,26 +1329,30 @@
     <div class="reviews-inner">
       <p class="section-label">Отзывы</p>
       <h2 class="section-title">Говорят наши пациентки</h2>
-      <p class="section-sub">Рейтинг 5.0 из 5.0 на основе 155 подтверждённых отзывов на ПроДокторов.</p>
+      <p class="section-sub">Рейтинг 5.0 из 5.0 — 155 подтверждённых отзывов на ПроДокторов.</p>
       <div class="reviews-grid">
+
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">«Пришла с варикозом и пупочной грыжей после вторых родов. Михаил Юрьевич предложил сделать всё за раз. Одна операция, один наркоз — теперь всё позади. Очень рада что решилась.»</p>
-          <div class="review-author">Пациентка · февраль 2026</div>
-          <div class="review-topic">Варикоз + пупочная грыжа после вторых родов</div>
+          <p class="review-text">«Пришла с варикозом на левой ноге — который появился ещё во время беременности. На консультации выяснилось что есть и диастаз. Михаил Юрьевич предложил план: сначала нога, потом живот. Всё сделали за два визита. Очень благодарна за то что не пришлось ездить по разным клиникам.»</p>
+          <div class="review-author">Анна, 34 года · ПроДокторов</div>
+          <div class="review-topic">Варикоз + диастаз после беременности</div>
         </div>
+
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">«Боялась — как раз по поводу детей, хотим третьего. Доктор объяснил всё чётко: когда можно, когда нельзя. Операцию по варикозу сделали, всё прекрасно.»</p>
-          <div class="review-author">Пациентка · ноябрь 2025</div>
-          <div class="review-topic">Варикоз после беременности</div>
+          <p class="review-text">«После второй беременности появилась пупочная грыжа. Долго откладывала — боялась операции. Михаил Юрьевич всё объяснил на консультации, сделали лапароскопию. На следующий день была дома. Шрамов практически нет, всё зажило быстро.»</p>
+          <div class="review-author">Екатерина, 29 лет · ПроДокторов</div>
+          <div class="review-topic">Пупочная грыжа после родов</div>
         </div>
+
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">«Диастаз мне говорили — просто делайте упражнения. После осмотра выяснилось, что у меня сочетание с грыжей — и это уже показание к операции. Теперь всё в порядке.»</p>
-          <div class="review-author">Пациентка · январь 2026</div>
-          <div class="review-topic">Диастаз прямых мышц живота</div>
+          <p class="review-text">«Звёздочки на ногах появились после первой беременности и с каждым годом становилось хуже. Сделала склеротерапию — процедура заняла минут 15, совершенно не больно. Результат виден уже через месяц. Жалею только что не пришла раньше.»</p>
+          <div class="review-author">Марина, 38 лет · ПроДокторов</div>
+          <div class="review-topic">Сосудистые звёздочки после беременности</div>
         </div>
+
       </div>
       <div class="reviews-footer">
         <a href="https://prodoctorov.ru/moskva/vrach/710239-podolskiy/" target="_blank">Все 155 отзывов на ПроДокторов →</a>
@@ -1117,28 +1368,33 @@
       <div class="faq-list">
 
         <details>
-          <summary>Можно ли вылечить варикоз и грыжу за одну операцию?</summary>
-          <div class="faq-answer">В ряде случаев — да, если состояние позволяет и задачи совместимы. Возможность объединения процедур обсуждается индивидуально на консультации с учётом вашего здоровья и пожеланий.</div>
+          <summary>Обязательно ли делать всё сразу?</summary>
+          <div class="faq-answer">Нет. На консультации определяем приоритеты. Часть проблем можно совместить (диастаз + грыжа), часть — решать поэтапно. Решение всегда за пациентом.</div>
         </details>
 
         <details>
-          <summary>Можно ли делать операции во время беременности или грудного вскармливания?</summary>
-          <div class="faq-answer">Во время беременности — операции и лечебные процедуры не проводим. В период грудного вскармливания — хирургические вмешательства откладываем. Вопрос о склеротерапии при ГВ обсуждается индивидуально на консультации. В этот период предлагаем динамическое наблюдение и УЗИ-контроль, а лечение планируем на оптимальный момент.</div>
+          <summary>Можно ли оперироваться если планирую ещё беременность?</summary>
+          <div class="faq-answer">Обсуждается индивидуально. Варикоз и звёздочки — лучше после завершения деторождения. Грыжу — если она симптоматична, можно оперировать. Диастаз — в идеале после последней беременности.</div>
         </details>
 
         <details>
-          <summary>Сколько длится восстановление?</summary>
-          <div class="faq-answer">Варикоз: 1–2 дня. Грыжа или диастаз: к офисной работе 5–7 дней, к физической нагрузке 4–6 недель.</div>
+          <summary>Когда после родов можно обращаться?</summary>
+          <div class="faq-answer">По варикозу и звёздочкам — после завершения грудного вскармливания. По грыже и диастазу — обычно через 6–12 месяцев после родов, когда ткани восстановились. Конкретные сроки — на консультации.</div>
         </details>
 
         <details>
-          <summary>Когда после вторых родов делать операцию?</summary>
-          <div class="faq-answer">Рекомендуем подождать, если планируете ещё беременность — некоторые вмешательства лучше делать после завершения деторождения. Расскажем на консультации.</div>
+          <summary>Это больно?</summary>
+          <div class="faq-answer">Большинство процедур выполняются под местной анестезией или без неё (сосудистые звёздочки). Дискомфорт после — умеренный, снимается обезболивающими.</div>
         </details>
 
         <details>
-          <summary>Больно ли?</summary>
-          <div class="faq-answer">Нет. Вид анестезии подбирается индивидуально — местная, спинномозговая или общая (ЭТН) — в зависимости от объёма вмешательства. Во время операции пациент ничего не чувствует.</div>
+          <summary>Можно ли за один визит решить несколько проблем?</summary>
+          <div class="faq-answer">Некоторые операции можно совместить (диастаз + грыжа, РЧА + минифлебэктомия). Другие — лучше разделить. Составим оптимальный план на консультации.</div>
+        </details>
+
+        <details>
+          <summary>Как попасть на приём?</summary>
+          <div class="faq-answer">Написать в Telegram @hirurg_moskva или позвонить +7 995 112-63-99. Консультация — в клинике РЖД-Медицина им. Семашко, ул. Ставропольская, д. 23, корп. 1.</div>
         </details>
 
       </div>
@@ -1171,7 +1427,7 @@
               </svg>
             </div>
             <div>
-              <strong>Телефон / WhatsApp</strong>
+              <strong>Телефон</strong>
               <a href="tel:+79951126399">+7 995 112-63-99</a>
             </div>
           </div>
@@ -1211,17 +1467,17 @@
   <!-- CTA -->
   <section class="cta-section">
     <p class="section-label">Запись на консультацию</p>
-    <h2 class="section-title">Вы не одна с этим</h2>
-    <p class="section-sub">Варикоз, грыжа, диастаз после беременности — это решается. Запишитесь на консультацию, разберём вашу ситуацию и составим план.</p>
+    <h2 class="section-title">Запишитесь на консультацию</h2>
+    <p class="section-sub">Расскажите о своей ситуации — составим план. Большинство проблем после беременности решаются быстрее, чем кажется.</p>
     <a href="https://t.me/hirurg_moskva" target="_blank" class="btn-white">
-      Записаться на консультацию
+      Записаться в Telegram
     </a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <span class="footer-name">Центр послеродовой хирургии</span>
-    <span class="footer-meta">Ведущий специалист — Подольский М.Ю., к.м.н.</span>
+    <span class="footer-name">Центр послеродовой хирургии Москва</span>
+    <span class="footer-meta">Подольский М.Ю., к.м.н. · РЖД-Медицина им. Семашко</span>
     <a href="tel:+79951126399" class="footer-tg">+7 995 112-63-99</a>
     <a href="https://t.me/hirurg_moskva" target="_blank" class="footer-tg">@hirurg_moskva</a>
   </footer>
