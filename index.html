@@ -39,7 +39,7 @@
     "medicalSpecialty": [
       "Флебология",
       "Герниология",
-      "Пластическая хирургия"
+      "Абдоминальная хирургия"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -63,7 +63,7 @@
     "employee": {
       "@type": "Physician",
       "name": "Подольский Михаил Юрьевич",
-      "description": "Хирург, кандидат медицинских наук. Специализации: флебология, герниология, абдоминопластика. Стаж 8 лет.",
+      "description": "Хирург, кандидат медицинских наук. Специализации: флебология, герниология, абдоминальная хирургия. Стаж 8 лет.",
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
@@ -148,6 +148,96 @@
     }
 
     .nav-phone:hover { color: var(--blue); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover { color: var(--blue); }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      margin-top: 16px;
+      transition: color 0.2s;
+    }
+
+    .service-link:hover { color: #fff; }
+
+    /* CLINIC */
+    .clinic-section {
+      background: var(--bg-soft);
+      padding: 80px 40px;
+    }
+
+    .clinic-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .clinic-text .section-title { margin-bottom: 20px; }
+
+    .clinic-text p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .clinic-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .clinic-list li {
+      font-size: 14px;
+      color: var(--text);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .clinic-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .clinic-photo-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(26,47,90,0.12);
+    }
+
+    .clinic-photo-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
 
     /* HERO */
     .hero {
@@ -832,6 +922,9 @@
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       .nav-name { display: none; }
+      .nav-links { display: none; }
+      .clinic-inner { grid-template-columns: 1fr; gap: 32px; }
+      .clinic-section { padding: 64px 24px; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -945,6 +1038,13 @@
   <!-- NAV -->
   <nav>
     <span class="nav-name">Центр послеродовой хирургии</span>
+    <div class="nav-links">
+      <a href="varikoz-posle-beremennosti.html" class="nav-link">Варикоз</a>
+      <a href="sosudistye-zvezdochki.html" class="nav-link">Звёздочки</a>
+      <a href="pupochnaya-gryzha.html" class="nav-link">Грыжа</a>
+      <a href="diastaz-pryamyh-myshts.html" class="nav-link">Диастаз</a>
+      <a href="abdominoplastika.html" class="nav-link">Абдоминопластика</a>
+    </div>
     <a href="tel:+79951126399" class="nav-phone">+7 995 112-63-99</a>
     <a href="https://t.me/hirurg_moskva" target="_blank" class="nav-cta">Записаться</a>
   </nav>
@@ -1014,7 +1114,7 @@
             </svg>
           </div>
           <h3>Вылезает пупочная грыжа</h3>
-          <p>Повышенное внутрибрюшное давление при вынашивании — частая причина послеродовых грыж белой линии живота.</p>
+          <p>Повышенное внутрибрюшное давление во время беременности — главная причина послеродовых грыж пупочного кольца.</p>
         </div>
 
         <div class="problem-card">
@@ -1045,7 +1145,7 @@
             </svg>
           </div>
           <h3>Послеродовые изменения тела</h3>
-          <p>Живот, грудь, рубец после кесарева сечения — всё это поддаётся коррекции. Не нужно жить с дискомфортом.</p>
+          <p>Живот, рубец после кесарева сечения — всё это поддаётся коррекции. Не нужно жить с дискомфортом.</p>
         </div>
 
         <div class="problem-card">
@@ -1068,7 +1168,7 @@
       <div class="services-header">
         <p class="section-label">Направления</p>
         <h2 class="section-title">Что мы лечим</h2>
-        <p class="section-sub">Шесть направлений — большинство закрывает один специалист.</p>
+        <p class="section-sub">Пять направлений — большинство закрывает один специалист.</p>
       </div>
       <div class="services-grid">
 
@@ -1087,6 +1187,7 @@
             <span class="tag">30 минут</span>
             <span class="tag">прокол 2 мм</span>
           </div>
+          <a href="varikoz-posle-beremennosti.html" class="service-link">Подробнее об операции →</a>
         </div>
 
         <div class="service-card">
@@ -1103,6 +1204,7 @@
             <span class="tag">10–15 минут</span>
             <span class="tag">без госпитализации</span>
           </div>
+          <a href="sosudistye-zvezdochki.html" class="service-link">Подробнее о процедуре →</a>
         </div>
 
         <div class="service-card">
@@ -1119,6 +1221,7 @@
             <span class="tag">IPOM-UP</span>
             <span class="tag">выписка на следующий день</span>
           </div>
+          <a href="pupochnaya-gryzha.html" class="service-link">Подробнее об операции →</a>
         </div>
 
         <div class="service-card">
@@ -1134,6 +1237,7 @@
             <span class="tag">Грыжа + диастаз</span>
             <span class="tag">После беременности</span>
           </div>
+          <a href="diastaz-pryamyh-myshts.html" class="service-link">Подробнее об операции →</a>
         </div>
 
         <div class="service-card">
@@ -1149,23 +1253,9 @@
             <span class="tag">Совместно с диастазом</span>
             <span class="tag">Рубец после КС</span>
           </div>
+          <a href="abdominoplastika.html" class="service-link">Подробнее об операции →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-            </svg>
-          </div>
-          <h3>Маммопластика</h3>
-          <p>Коррекция формы и объёма груди после кормления — выполняется совместно с пластическим хирургом центра на базе РЖД-Медицина.</p>
-          <div class="service-tags">
-            <span class="tag">Пластический хирург центра</span>
-            <span class="tag">Совместная операция</span>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -1213,22 +1303,6 @@
           </div>
         </div>
 
-        <div class="team-card">
-          <div class="team-avatar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-          </div>
-          <div class="team-name">Пластический хирург</div>
-          <div class="team-role">Специалист центра</div>
-          <div class="team-desc">Маммопластика и эстетическая коррекция выполняются совместно с пластическим хирургом центра. Операции проводятся на базе РЖД-Медицина им. Семашко.</div>
-          <div class="team-badges">
-            <span class="team-badge">Маммопластика</span>
-            <span class="team-badge">Эстетическая коррекция</span>
-            <span class="team-badge">РЖД-Медицина</span>
-          </div>
-        </div>
 
         <div class="team-card partner">
           <div class="team-avatar">
@@ -1285,7 +1359,7 @@
           <div class="why-num">4</div>
           <div>
             <h4>Партнёры для смежных направлений.</h4>
-            <p>Гинекология, маммопластика, психологическая поддержка — не отправляем "куда-нибудь", а к конкретным специалистам.</p>
+            <p>Гинекология, психологическая поддержка — не отправляем "куда-нибудь", а к конкретным специалистам.</p>
           </div>
         </div>
 
@@ -1320,6 +1394,27 @@
           <h4>Наблюдение</h4>
           <p>Контрольные осмотры, ответы на вопросы в Telegram. На связи от первого дня до полного восстановления.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINIC -->
+  <section class="clinic-section">
+    <div class="clinic-inner">
+      <div class="clinic-text">
+        <p class="section-label">Где проходят операции</p>
+        <h2 class="section-title">Современная операционная</h2>
+        <p>Операции проводятся на базе ЧУЗ КБ «РЖД-Медицина» им. Н.А. Семашко — клиники с полностью оснащённой операционной, эндоскопическим оборудованием и 24-часовой анестезиологической службой.</p>
+        <ul class="clinic-list">
+          <li>Интегрированная операционная с видеосистемой 4K</li>
+          <li>Лапароскопическая стойка — грыжи и диастаз без разрезов</li>
+          <li>Оборудование для РЧА (VNUS) и ЭВЛК (ELVeS Radial)</li>
+          <li>Интраоперационное ультразвуковое картирование вен</li>
+          <li>Дневной стационар — большинство операций без ночёвки</li>
+        </ul>
+      </div>
+      <div class="clinic-photo-wrap">
+        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=85" alt="Операционная РЖД-Медицина им. Н.А. Семашко">
       </div>
     </div>
   </section>
@@ -1390,6 +1485,11 @@
         <details>
           <summary>Можно ли за один визит решить несколько проблем?</summary>
           <div class="faq-answer">Некоторые операции можно совместить (диастаз + грыжа, РЧА + минифлебэктомия). Другие — лучше разделить. Составим оптимальный план на консультации.</div>
+        </details>
+
+        <details>
+          <summary>Когда после родов можно делать абдоминопластику?</summary>
+          <div class="faq-answer">Не раньше 6–12 месяцев после родов. Обязательные условия: завершение грудного вскармливания и стабильный вес в течение 3–6 месяцев. Конкретные сроки обсуждаем на консультации.</div>
         </details>
 
         <details>
