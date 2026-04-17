@@ -687,6 +687,37 @@
       line-height: 1.6;
     }
 
+    /* ARTICLES */
+    .articles-section {
+      padding: 100px 40px;
+      background: var(--bg-soft);
+    }
+    .articles-section .section-label { text-align: center; }
+    .articles-section .section-title { text-align: center; margin-bottom: 48px; }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      display: flex;
+      flex-direction: columns;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .article-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.08); transform: translateY(-2px); }
+    .article-card-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--blue); }
+    .article-card-title { font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.4; }
+    .article-card-arrow { font-size: 13px; color: var(--blue); margin-top: auto; }
+
     /* CTA */
     .cta-section {
       background: var(--blue);
@@ -950,6 +981,8 @@
       .services-grid { grid-template-columns: 1fr 1fr; }
       .team-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr; }
+      .articles-grid { grid-template-columns: 1fr 1fr; }
+      .articles-section { padding: 72px 24px; }
 
       .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
       .process-steps::before { display: none; }
@@ -968,6 +1001,7 @@
 
     /* RESPONSIVE — телефон */
     @media (max-width: 480px) {
+      .articles-grid { grid-template-columns: 1fr; }
       nav {
         padding: 0 16px;
         height: 56px;
@@ -1561,6 +1595,84 @@
           <iframe src="https://yandex.ru/map-widget/v1/?ll=37.760952%2C55.683864&z=16&pt=37.760952%2C55.683864~" allowfullscreen="true"></iframe>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="articles-section">
+    <p class="section-label">Полезно знать</p>
+    <h2 class="section-title">Статьи о послеродовой хирургии</h2>
+    <div class="articles-grid">
+      <a href="simptomy-diastaza.html" class="article-card">
+        <span class="article-card-tag">Диастаз</span>
+        <span class="article-card-title">Симптомы диастаза — как распознать расхождение мышц</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="diastaz-posle-rodov.html" class="article-card">
+        <span class="article-card-tag">Диастаз</span>
+        <span class="article-card-title">Диастаз после родов — почему живот не уходит</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="diastaz-stepen.html" class="article-card">
+        <span class="article-card-tag">Диастаз</span>
+        <span class="article-card-title">Степени диастаза — чем отличаются и как лечить</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="diastaz-bez-operacii.html" class="article-card">
+        <span class="article-card-tag">Лечение</span>
+        <span class="article-card-title">Диастаз без операции — мифы и реальность</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="diastaz-uprazhneniya.html" class="article-card">
+        <span class="article-card-tag">Гимнастика</span>
+        <span class="article-card-title">Упражнения при диастазе — что можно и нельзя</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="diastaz-operaciya.html" class="article-card">
+        <span class="article-card-tag">Операция</span>
+        <span class="article-card-title">Операция при диастазе — как проходит и что после</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="gryzha-beloy-linii.html" class="article-card">
+        <span class="article-card-tag">Грыжи</span>
+        <span class="article-card-title">Грыжа белой линии живота после родов</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="pupochnaya-gryzha-simptomy.html" class="article-card">
+        <span class="article-card-tag">Грыжи</span>
+        <span class="article-card-title">Симптомы пупочной грыжи после родов</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="varikoz-pri-beremennosti-poslerodovaya.html" class="article-card">
+        <span class="article-card-tag">Варикоз</span>
+        <span class="article-card-title">Варикоз при беременности — причины и тактика</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="simptomy-varikoza-posle-rodov.html" class="article-card">
+        <span class="article-card-tag">Варикоз</span>
+        <span class="article-card-title">Симптомы варикоза после родов</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="varikoz-bez-operacii-poslerodovaya.html" class="article-card">
+        <span class="article-card-tag">Варикоз</span>
+        <span class="article-card-title">Варикоз без операции после родов — что реально помогает</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="kompressionnye-chulki-beremennost.html" class="article-card">
+        <span class="article-card-tag">Профилактика</span>
+        <span class="article-card-title">Компрессионные чулки при беременности</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="sosudistye-zvezdochki-posle-rodov.html" class="article-card">
+        <span class="article-card-tag">Флебология</span>
+        <span class="article-card-title">Сосудистые звёздочки после родов — как убрать</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
+      <a href="voprosy-poslerodovaya.html" class="article-card">
+        <span class="article-card-tag">FAQ</span>
+        <span class="article-card-title">Вопросы о послеродовой хирургии — ответы хирурга</span>
+        <span class="article-card-arrow">Читать →</span>
+      </a>
     </div>
   </section>
 
