@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poslerodovaya-hirurgiya.ru/sitemap.xml
